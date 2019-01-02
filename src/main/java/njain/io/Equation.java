@@ -1,10 +1,9 @@
 package njain.io;
 
+import java.io.Serializable;
+import javax.xml.bind.annotation.XmlRootElement;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.xml.bind.annotation.XmlRootElement;
-import java.io.Serializable;
 
 @Setter
 @Getter
@@ -27,5 +26,4 @@ public class Equation implements Serializable {
     public String toString() {
         return x + " " + operator + " " + y + " " + "=";
     }
-
 }

@@ -1,11 +1,10 @@
 package njain.io;
 
-import njain.io.exceptions.UnsupportedOperatorException;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import njain.io.exceptions.UnsupportedOperatorException;
 
 public class AirthmeticService {
 
@@ -29,6 +28,7 @@ public class AirthmeticService {
         int x = eqn.getX();
         int y = eqn.getY();
         char operator = eqn.getOperator();
+
         switch (operator) {
             case '+' : return sum(x, y);
             case '-' : return subtract(x, y);
